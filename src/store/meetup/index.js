@@ -4,20 +4,20 @@ export default {
   state: {
     loadedMeetups: [
       {
-        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg',
-        id: 'afajfjadfaadfa323',
-        title: 'Meetup in New York',
+        imageUrl: 'http://www.geeksandcom.com/wp-content/uploads/2017/08/fifa18.jpg',
+        id: 'exemple-1',
+        title: 'Session matchs amicaux sur Fifa 18 !',
         date: new Date(),
-        location: 'New York',
-        description: 'New York, New York!'
+        location: 'Fifa 18, PS4',
+        description: 'Je recherche des joueurs pour une session de matchs amicaux sur Fifa 18 ! Je joue sur PS4, vous pouvez envoyer un message à "exemple" pour jouer !'
       },
       {
-        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Paris_-_Blick_vom_gro%C3%9Fen_Triumphbogen.jpg',
-        id: 'aadsfhbkhlk1241',
-        title: 'Meetup in Paris',
+        imageUrl: 'http://content.pulse.ea.com/content/legacy/battlefield-portal/fr_FR/news/battlefield-1/celebrate-battlefield-1-holidays-with-events/_jcr_content/featuredImage/renditions/rendition1.img.jpg',
+        id: 'exemple-2',
+        title: 'Session multijoueur sur Battlefield 1 !!',
         date: new Date(),
-        location: 'Paris',
-        description: 'It\'s Paris!'
+        location: 'Battlefield 1, PC',
+        description: 'Je recherche des joueurs expérimentés pour des parties endiablées de Battlefield 1 ! Ajoutez moi sur "exemple" et envoyez un message à "exemple" pour être invité !'
       }
     ]
   },

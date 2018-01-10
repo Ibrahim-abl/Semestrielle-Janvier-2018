@@ -1,13 +1,13 @@
 <template>
   <v-dialog width="350px" persistent v-model="editDialog">
     <v-btn accent slot="activator">
-      Edit Date
+      Modifier la date
     </v-btn>
     <v-card>
       <v-container>
         <v-layout row wrap>
           <v-flex xs12>
-            <v-card-title>Edit Meetup Date</v-card-title>
+            <v-card-title>Modifier la date</v-card-title>
           </v-flex>
         </v-layout>
         <v-divider></v-divider>
@@ -18,11 +18,11 @@
                 <v-btn
                   class="blue--text darken-1"
                   flat
-                  @click.native="editDialog = false">Close</v-btn>
+                  @click.native="editDialog = false">Fermer</v-btn>
                 <v-btn
                   class="blue--text darken-1"
                   flat
-                  @click.native="onSaveChanges">Save</v-btn>
+                  @click.native="onSaveChanges">Enregistrer</v-btn>
               </template>
             </v-date-picker>
           </v-flex>

@@ -2,7 +2,7 @@
   <v-container>
     <v-layout row>
       <v-flex xs12 sm6 offset-sm3>
-        <h4>Create a new Meetup</h4>
+        <h4>Créer une session</h4>
       </v-flex>
     </v-layout>
     <v-layout row>
@@ -12,7 +12,7 @@
             <v-flex xs12 sm6 offset-sm3>
               <v-text-field
                 name="title"
-                label="Title"
+                label="Nom de la session"
                 id="title"
                 v-model="title"
                 required></v-text-field>
@@ -22,7 +22,7 @@
             <v-flex xs12 sm6 offset-sm3>
               <v-text-field
                 name="location"
-                label="Location"
+                label="Jeux"
                 id="location"
                 v-model="location"
                 required></v-text-field>
@@ -30,7 +30,7 @@
           </v-layout>
           <v-layout row>
             <v-flex xs12 sm6 offset-sm3>
-              <v-btn raised class="primary" @click="onPickFile">Upload Image</v-btn>
+              <v-btn raised class="primary" @click="onPickFile">Insérer une image</v-btn>
               <input
                 type="file"
                 style="display: none"
@@ -57,7 +57,7 @@
           </v-layout>
           <v-layout row>
             <v-flex xs12 sm6 offset-sm3>
-              <h4>Choose a Data & Time</h4>
+              <h4>Choisir une date et une heure</h4>
             </v-flex>
           </v-layout>
           <v-layout row class="mb-2">
@@ -75,7 +75,7 @@
               <v-btn
                 class="primary"
                 :disabled="!formIsValid"
-                type="submit">Create Meetup</v-btn>
+                type="submit">Créer la session</v-btn>
             </v-flex>
           </v-layout>
         </form>
@@ -134,7 +134,7 @@
           date: this.submittableDateTime
         }
         this.$store.dispatch('createMeetup', meetupData)
-        this.$router.push('/meetups')
+        this.$router.push('/sessions')
       },
       onPickFile () {
         this.$refs.fileInput.click()
@@ -143,7 +143,7 @@
         const files = event.target.files
         let filename = files[0].name
         if (filename.lastIndexOf('.') <= 0) {
-          return alert('Please add a valid file!')
+          return alert('Entrez un fichier valide')
         }
         const fileReader = new FileReader()
         fileReader.addEventListener('load', () => {

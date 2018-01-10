@@ -1,21 +1,3 @@
-# yt-devmeetup-vue
+# VideoJeux.com
 
-A dev meetup application built with Vue + Vuetify + Firebase.
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Un site permettant aux gens de créer des "rendez-vous" pour des sessions de jeux à plusieurs. Ils peuvent sélectionner des dates/heures, et d'autres personnes peuvent ensuite participer à ces sessions en s'inscrivant à la publication. Il faudra simplement se créer un compte sur le site pour pouvoir proposer ou participer à des activités.

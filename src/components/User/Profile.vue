@@ -1,5 +1,5 @@
 <template>
   <div>
-    <p>The User Page</p>
+    <p>La page de profil est en cours de création...</p>
   </div>
 </template>

@@ -1,8 +1,8 @@
 {
-  "name": "yt-devmeetup-vue",
+  "name": "site-semestrielle",
   "version": "1.0.0",
-  "description": "A dev meetup applicatin built with Vue + Vuetify + Firebase",
-  "author": "Maximilian Schwarzmüller <business@academind.com>",
+  "description": "site pour créer/joindre des sessions de jeux en ligne",
+  "author": "Ibrahim-abl <ibrahim.abl@eduge.ch>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",

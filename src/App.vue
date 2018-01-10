@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app dark>
     <v-navigation-drawer temporary v-model="sideNav">
       <v-list>
         <v-list-tile
@@ -17,7 +17,7 @@
           <v-list-tile-action>
             <v-icon>exit_to_app</v-icon>
           </v-list-tile-action>
-          <v-list-tile-content>Logout</v-list-tile-content>
+          <v-list-tile-content>Déconnexion</v-list-tile-content>
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
@@ -26,7 +26,7 @@
         @click.stop="sideNav = !sideNav"
         class="hidden-sm-and-up "></v-toolbar-side-icon>
       <v-toolbar-title>
-        <router-link to="/" tag="span" style="cursor: pointer">DevMeetup</router-link>
+        <router-link to="/" tag="span" style="cursor: pointer">VideoJeux.com</router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-xs-only">
@@ -44,7 +44,7 @@
           flat
           @click="onLogout">
           <v-icon left dark>exit_to_app</v-icon>
-          Logout
+          Déconnexion
 
         </v-btn>
       </v-toolbar-items>
@@ -65,14 +65,14 @@
     computed: {
       menuItems () {
         let menuItems = [
-          {icon: 'face', title: 'Sign up', link: '/signup'},
-          {icon: 'lock_open', title: 'Sign in', link: '/signin'}
+          {icon: 'account_box', title: 'Inscription', link: '/signup'},
+          {icon: 'lock_open', title: 'Connexion', link: '/signin'}
         ]
         if (this.userIsAuthenticated) {
           menuItems = [
-            {icon: 'supervisor_account', title: 'View Meetups', link: '/meetups'},
-            {icon: 'room', title: 'Organize Meetup', link: '/meetup/new'},
-            {icon: 'person', title: 'Profile', link: '/profile'}
+            {icon: 'gamepad', title: 'Voir les sessions disponibles', link: '/sessions'},
+            {icon: 'library_add', title: 'Créer une session', link: '/session/new'},
+            {icon: 'person', title: 'Profil', link: '/profile'}
           ]
         }
         return menuItems

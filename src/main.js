@@ -29,11 +29,12 @@ new Vue({
   render: h => h(App),
   created () {
     firebase.initializeApp({
-      apiKey: 'AIzaSyCFYWd6FpR53u4hSPXQSjOYeZNPF1FxG2M',
-      authDomain: 'yt-devmeetup.firebaseapp.com',
-      databaseURL: 'https://yt-devmeetup.firebaseio.com',
-      projectId: 'yt-devmeetup',
-      storageBucket: 'gs://yt-devmeetup.appspot.com'
+      apiKey: 'AIzaSyDXb0JIbmaHOPEK_Bav8sOjYUs_30cxb0s',
+      authDomain: 'test-site-daea5.firebaseapp.com',
+      databaseURL: 'https://test-site-daea5.firebaseio.com',
+      projectId: 'test-site-daea5',
+      storageBucket: 'test-site-daea5.appspot.com',
+      messagingSenderId: '543374180660'
     })
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {

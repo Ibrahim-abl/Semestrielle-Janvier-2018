@@ -1,20 +1,20 @@
 <template>
   <v-dialog persistent v-model="registerDialog">
     <v-btn primary accent slot="activator">
-      {{ userIsRegistered ? 'Unregister' : 'Register' }}
+      {{ userIsRegistered ? 'Se désinscrire' : "S'inscrire" }}
     </v-btn>
     <v-card>
       <v-container>
         <v-layout row wrap>
           <v-flex xs12>
-            <v-card-title v-if="userIsRegistered">Unregister from Meetup?</v-card-title>
-            <v-card-title v-else>Register for Meetup?</v-card-title>
+            <v-card-title v-if="userIsRegistered">Se désinscrire</v-card-title>
+            <v-card-title v-else>S'inscrire</v-card-title>
           </v-flex>
         </v-layout>
         <v-divider></v-divider>
         <v-layout row wrap>
           <v-flex xs12>
-            <v-card-text>You can always change your decision later on.</v-card-text>
+            <v-card-text>Vous pouvez toujours changer d'avis</v-card-text>
           </v-flex>
         </v-layout>
         <v-layout row wrap>
@@ -23,11 +23,11 @@
               <v-btn
                 class="red--text darken-1"
                 flat
-                @click="registerDialog = false">Cancel</v-btn>
+                @click="registerDialog = false">Annuler</v-btn>
               <v-btn
                 class="green--text darken-1"
                 flat
-                @click="onAgree">Confirm</v-btn>
+                @click="onAgree">Confirmer</v-btn>
             </v-card-actions>
           </v-flex>
         </v-layout>
